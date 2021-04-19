@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/et_hint"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_team_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.01"
+        android:text="Total Plants"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@+id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="22sp" />
+
+    <TextView
+        android:id="@+id/txt_result1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.01"
+        android:text="PENDING"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="@color/pending"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_team_first"
+        app:layout_constraintStart_toStartOf="@+id/txt_team_first"
+        app:layout_constraintTop_toBottomOf="@+id/txt_team_first"
+        app:layout_constraintWidth_percent="0.4"
+        app:lineHeight="22sp" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/bg_separator"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_result1"
+        app:layout_constraintEnd_toStartOf="@+id/txt_team2"
+        app:layout_constraintStart_toEndOf="@+id/txt_team_first"
+        app:layout_constraintTop_toTopOf="@+id/txt_team_first" />
+
+    <TextView
+        android:id="@+id/txt_team2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.01"
+        android:text="Team 2"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separator"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="22sp" />
+
+    <TextView
+        android:id="@+id/txt_result2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="-0.01"
+        android:text="Pending"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textColor="@color/pending"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_team2"
+        app:layout_constraintStart_toStartOf="@+id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_team2"
+        app:layout_constraintWidth_percent="0.4"
+        app:lineHeight="22sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
