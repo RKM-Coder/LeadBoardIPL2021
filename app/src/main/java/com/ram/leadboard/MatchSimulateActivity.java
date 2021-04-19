@@ -73,7 +73,7 @@ public class MatchSimulateActivity extends AppCompatActivity {
                     updateList();*/
                 }else if (buttonText.equalsIgnoreCase("Simulate")){
 
-                    
+
                     if (listOfpair.size()==1){
                         btnSimulategame.setText("Restart");
                         teamListAdapter.setResult(false);
